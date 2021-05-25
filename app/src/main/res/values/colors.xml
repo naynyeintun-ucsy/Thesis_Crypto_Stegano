@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="textcolorPrimary">#16C6F1</color>
+    <color name="colorPrimaryDark">#424242</color>
+    <color name="colorAccent">#16C6F1</color>
+    <color name="pink">#FF4081</color>
+    <color name="dark_pink">#791c3b</color>
+    <color name="toggle_press">#6016C6F1</color>
+    <color name="toggle_normal">#3016C6F1</color>
+    <color name="toggle_normal_un">#ac000000</color>
+    <color name="layout_bg">#000000</color>
+    <color name="red">#b4141f</color>
+    <color name="white">#ffffff</color>
+    <color name="textColor">#16C6F1</color>
+    <color name="cvd_background">#3016C6F1</color>
+
+</resources>

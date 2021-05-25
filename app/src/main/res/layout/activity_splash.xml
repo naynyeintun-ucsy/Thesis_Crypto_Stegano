@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#000000">
+
+    <TextView
+        android:id="@+id/topTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HIDE IT"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:textColor="#16C6F1"
+        android:paddingTop="100dp"/>
+
+    <LinearLayout
+        android:layout_below="@+id/topTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:id="@+id/mainLinearLayout"
+        android:layout_above="@+id/mainTextView"
+        android:paddingLeft="16dp"
+        android:paddingBottom="16dp"
+        android:paddingRight="16dp">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/splashimg"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/mainTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Developed By Nay Nyein Tun(UCSY)"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textSize="9dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="#16C6F1"/>
+
+</RelativeLayout>
+

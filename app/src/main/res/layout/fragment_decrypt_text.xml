@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.whk.spa.decrypt_text">
+
+
+
+        <ScrollView
+            android:background="#ffffff"
+            android:visibility="visible"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        android:scrollbarStyle="insideInset"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:id="@+id/card"
+            android:layout_above="@+id/keydec"
+            android:gravity="top"
+        android:scrollbars="vertical" >
+
+
+        <TextView
+            android:id="@+id/textviewmsgboxdec"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:scrollbars="vertical"
+            android:hint="Output message will be appear after execution process"
+            android:paddingLeft="8dp"
+            android:paddingTop="16dp"
+
+            android:textSize="15dp"
+            />
+    </ScrollView>
+
+
+    <LinearLayout
+        android:background="#f7f6f6"
+        android:id="@+id/keydec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/lydec"
+        android:layout_alignParentEnd="true"
+
+        >
+
+        <TextView
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/sekeycheckItoTDec"
+            android:gravity="center"
+            android:enabled="true"
+
+            android:text="Security Key  :"/>
+
+        <EditText
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:inputType="textPassword"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/customborder"
+            android:id="@+id/editTextPasswordDec"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lydec"
+        android:background="@color/layout_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:background="#04252D"
+            android:textColor="@color/colorAccent"
+            android:layout_weight="1"
+            android:id="@+id/extractdec"
+            android:text="Execute"
+            android:onClick="onExecuteProcessDec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0.5dp"/>
+
+        <Button
+            android:background="#04252D"
+            android:textColor="@color/colorAccent"
+            android:layout_weight="1"
+            android:id="@+id/clearToIdec"
+            android:text="Clear"
+            android:onClick="onClearActiondec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0.5dp"/>
+    </LinearLayout>
+</RelativeLayout>

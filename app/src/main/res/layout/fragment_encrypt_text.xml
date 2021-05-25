@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.whk.spa.encrypt_text">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/card"
+        android:layout_above="@+id/key"
+        >
+    <EditText
+    android:layout_alignParentTop="true"
+       android:hint="Enter your message"
+        android:gravity="top"
+        android:paddingTop="16dp"
+        android:paddingLeft="8dp"
+        android:background="#ffffff"
+        android:id="@+id/edittextmsgbox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+         android:layout_alignParentStart="true"/>
+
+    </android.support.v7.widget.CardView>
+
+
+    <LinearLayout
+        android:background="#f7f6f6"
+        android:id="@+id/key"
+       android:layout_above="@id/ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentStart="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+
+        >
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/sekeycheckItoT"
+            android:onClick="onCheckBoxAction"
+            android:checked="true"
+            android:text="Security Key"/>
+
+        <EditText
+
+            android:inputType="textPassword"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+           android:background="@drawable/customborder"
+            android:id="@+id/editTextPassword"
+             android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/colorAccent"
+
+
+          />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly"
+        android:background="@color/layout_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/embed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#04252D"
+            android:onClick="onExecuteProcess"
+            android:text="Execute"
+            android:layout_marginRight="0.5dp"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/clearToI"
+            android:text="Clear"
+            android:onClick="onClearAction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#04252D"
+            android:layout_marginLeft="0.5dp"
+            android:textColor="@color/colorAccent"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>
